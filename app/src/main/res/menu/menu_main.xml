@@ -1,0 +1,33 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_settings"
+            android:checkable="true"
+            android:title="@string/option1"
+            android:icon="@android:drawable/ic_dialog_alert" />
+        <item
+            android:id="@+id/menu_1"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/option2"/>
+        <item
+            android:id="@+id/config"
+            android:title="@string/option3"
+            android:icon="@android:drawable/ic_dialog_email">
+            <menu>
+                <item
+                    android:icon="@android:drawable/ic_delete"
+                    android:title="@string/option3_1"/>
+                <item
+                    android:icon="@android:drawable/ic_delete"
+                    android:title="@string/option3_2"/>
+                <item
+                    android:icon="@android:drawable/ic_delete"
+                    android:title="@string/option3_3"/>
+            </menu>
+        </item>
+    </group>
+</menu>
